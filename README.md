@@ -1,7 +1,7 @@
-# CH4goat
+# CH4goat <img src="man/figures/logo.png" align="right" />
 
 ## Overview
-CH4goat is a deep learning models for calculate the methane emission from goats :goat:. It contains two black-box model using the dataset from Konkuk University. One hundred and fifty data from 4 published (Li et al., 2010; Li, 2011; Choi, 2012; Hwang, 2013) and 3 unpublished experiments were used to develop models.
+CH4goat is a deep learning models for calculate the methane emission from goats :goat:. It contains two black-box model (model1 & model2) using the dataset from Konkuk University.
 
 ## Installation  
 ``` r
@@ -29,7 +29,7 @@ neuralnet::compute(model2, base_frame)$net.result # unit is L/d
 ```
 
 ## Notification
-This package is under development. Everyone can contribute to this package. **If you have the *in vivo* data of goats and want to progress this model, please contact via email. :goat:**
+This package is under development. Everyone can contribute to this package. **If you have the *in vivo* data of goats and want to progress this model, please contact via [email](ruminoreticulum@gmail.com) or github. :goat:**
 
 
 ## Getting helps
