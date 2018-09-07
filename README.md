@@ -29,7 +29,7 @@ neuralnet::compute(model2, base_frame)$net.result # unit is L/d
 ```
 
 ## Youtube tutorial
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/nfOxvrhkmy0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+https://youtu.be/nfOxvrhkmy0
 
 ## Notification
 This package is under development. Everyone can contribute to this package. **If you have the *in vivo* data of goats and want to progress this model, please contact via [email](ruminoreticulum@gmail.com) or github. :goat:**
