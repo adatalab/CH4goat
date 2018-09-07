@@ -28,6 +28,9 @@ base_frame[1,] <- c(600,530,80,300) # unit is g/d
 neuralnet::compute(model2, base_frame)$net.result # unit is L/d
 ```
 
+## Youtube tutorial
+https://youtu.be/nfOxvrhkmy0
+
 ## Notification
 This package is under development. Everyone can contribute to this package. **If you have the *in vivo* data of goats and want to progress this model, please contact via [email](ruminoreticulum@gmail.com) or github. :goat:**
 
