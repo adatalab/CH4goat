@@ -21,8 +21,8 @@ base_frame(model = 2) # use when using model2 (inputs = DMI, OMI, CPI, and NDFI)
 
 example1 <- readxl::read_excel("model1-example.xlsx")
 ```
-- [model1-example1.xlsx](https://github.com/adatalab/CH4goat/model1-example.xlsx)
-- [model1-example2.xlsx](https://github.com/adatalab/CH4goat/model2-example.xlsx)
+- [model1-example1.xlsx](https://github.com/YoungjunNa/CH4goat/blob/master/model1-example.xlsx)
+- [model1-example2.xlsx](https://github.com/YoungjunNa/CH4goat/blob/master/model2-example.xlsx)
 
 ### normalization
 ``` r
