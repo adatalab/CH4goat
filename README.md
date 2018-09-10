@@ -16,16 +16,28 @@ devtools::install_github("adatalab/CH4goat")
 # making a base frame for predict the methane emission from goats
 base_frame(model = 1) # use when using model1 (inputs = DMI, OMI, CPI, NDFI, DDMI, DOMI, DCPI, and DNDFI)
 base_frame(model = 2) # use when using model2 (inputs = DMI, OMI, CPI, and NDFI)
+
+# OR read the example excel file
+
+example1 <- readxl::read_excel("model1-example.xlsx")
+```
+- [model1-example1.xlsx](https://github.com/YoungjunNa/CH4goat/blob/master/model1-example.xlsx)
+- [model1-example2.xlsx](https://github.com/YoungjunNa/CH4goat/blob/master/model2-example.xlsx)
+
+### normalization
+``` r
+example1_nor <- normalization(example1, model=1)
 ```
 
 ### compute
 ``` r
-# example dataset
-base_frame(model = 2)
-base_frame[1,] <- c(600,530,80,300) # unit is g/d
-
 # calculating the methane emission from goats using deep learning model.
-neuralnet::compute(model2, base_frame)$net.result # unit is L/d
+result <- neuralnet::compute(model1, example1_nor)$net.result
+```
+
+### back-normalization
+``` r
+back_normalization(result$net.result) # unit is L/d
 ```
 
 ## Youtube tutorial
