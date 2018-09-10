@@ -21,8 +21,8 @@ base_frame(model = 2) # use when using model2 (inputs = DMI, OMI, CPI, and NDFI)
 
 example1 <- readxl::read_excel("model1-example.xlsx")
 ```
-- [model1-example1.xlsx](https://github.com/YoungjunNa/CH4goat/blob/master/model1-example.xlsx)
-- [model1-example2.xlsx](https://github.com/YoungjunNa/CH4goat/blob/master/model2-example.xlsx)
+- [model1-example.xlsx](https://github.com/YoungjunNa/CH4goat/blob/master/model1-example.xlsx)
+- [model2-example.xlsx](https://github.com/YoungjunNa/CH4goat/blob/master/model2-example.xlsx)
 
 ### normalization
 ``` r
@@ -35,9 +35,9 @@ example1_nor <- normalization(data = example1, model = 1)
 result <- neuralnet::compute(model1, example1_nor)
 ```
 
-### back-normalization
+### denormalization
 ``` r
-back_normalization(result$net.result) # unit is L/d
+denormalization(result$net.result) # unit is L/d
 ```
 
 ## Notification
