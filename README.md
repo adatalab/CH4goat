@@ -26,13 +26,13 @@ example1 <- readxl::read_excel("model1-example.xlsx")
 
 ### normalization
 ``` r
-example1_nor <- normalization(example1, model=1)
+example1_nor <- normalization(data = example1, model = 1)
 ```
 
 ### compute
 ``` r
 # calculating the methane emission from goats using deep learning model.
-result <- neuralnet::compute(model1, example1_nor)$net.result
+result <- neuralnet::compute(model1, example1_nor)
 ```
 
 ### back-normalization
@@ -40,11 +40,8 @@ result <- neuralnet::compute(model1, example1_nor)$net.result
 back_normalization(result$net.result) # unit is L/d
 ```
 
-## Youtube tutorial
-https://youtu.be/nfOxvrhkmy0
-
 ## Notification
-This package is under development. Everyone can contribute to this package. **If you have the *in vivo* data of goats and want to progress this model, please contact via [email](ruminoreticulum@gmail.com) or github. :goat:**
+This package is under development. Everyone can contribute to this package. **If you have the *in vivo* data of goats and want to progress this model, please contact via email :email: or [github issue](https://github.com/adatalab/CH4goat/issues) :octocat:**
 
 
 ## Getting helps
