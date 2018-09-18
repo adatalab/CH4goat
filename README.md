@@ -26,7 +26,7 @@ example1 <- readxl::read_excel("model1-example.xlsx")
 
 ### normalization
 ``` r
-example1_nor <- normalization(data = example1, model = 1)
+example1_nor <- normalization(data = example1)
 ```
 
 ### compute

@@ -7,11 +7,9 @@
 #' neuralnet::compute(model1,example1)
 #' denormalization(data=example1$net.result)
 
-denormalization <- function(data) {
-  back_normalize <- function(x) {
-    return(x*(max(minmax$CH4)-min(minmax$CH4))+(min(minmax$CH4)))
-  }
-  data <- data.frame(CH4=data)
-  back_nor <- as.data.frame(lapply(data,back_normalize))
-  return(back_nor)
+denormalization <- function(data){
+  denormalized <- data*(max(minmax$CH4)-min(minmax$CH4)) + min(minmax$CH4)
+  return(denormalized)
 }
+
+

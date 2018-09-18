@@ -4,13 +4,13 @@
 \alias{normalization}
 \title{normalization}
 \usage{
-normalization(data, model)
+normalization(data)
 }
 \description{
 A function normalization.
 }
 \examples{
-normalization(data=example1, model1)
+normalization(data=example1)
 }
 \keyword{deep}
 \keyword{goat}
