@@ -11,6 +11,17 @@ devtools::install_github("adatalab/CH4goat")
 ```
 
 ## Usage
+### models
+The package contains two black-box model derived from the *in vivo* enteric methane dataset using respiration-metabolism chamber system.
+
+``` r
+model1
+plot(model1)
+
+model2
+plot(model2)
+```
+
 ### base_frame
 ``` r
 # making a base frame for predict the methane emission from goats
