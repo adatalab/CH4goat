@@ -1,7 +1,7 @@
 # CH4goat <img src="man/figures/logo.png" align="right" />
 
 ## Overview
-CH4goat is a deep learning models for calculate the methane emission from goats :goat:. It contains two black-box model (model1 & model2) using the dataset from Konkuk University.
+CH4goat is a neural network models for calculate the methane emission from goats :goat:. It contains two black-box model (model1 & model2) using the dataset from Konkuk University.
 
 ## Installation  
 ``` r
@@ -42,7 +42,7 @@ example1_nor <- normalization(data = example1)
 
 ### compute
 ``` r
-# calculating the methane emission from goats using deep learning model.
+# calculating the methane emission from goats using neural network model.
 result <- neuralnet::compute(model1, example1_nor)
 ```
 
